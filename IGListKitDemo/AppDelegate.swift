@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.rootViewController = UINavigationController(rootViewController: MessagesViewController())
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -42,5 +48,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension UIColor {
+    
+    static let brightBlue = UIColor(red: 0, green: 0.4784, blue: 1, alpha: 1.0)
+    static let brightOrange = UIColor(red: 1, green: 0.6392, blue: 0.4588, alpha: 1.0)
+    
 }
 

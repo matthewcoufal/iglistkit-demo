@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B64D3D3BF2155ED043FC29F /* Pods_IGListKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50806D885D384484C94C7818 /* Pods_IGListKitDemoUITests.framework */; };
 		0C45635C2229B98F009CBB1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45635B2229B98F009CBB1C /* AppDelegate.swift */; };
-		0C45635E2229B98F009CBB1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45635D2229B98F009CBB1C /* ViewController.swift */; };
-		0C4563612229B98F009CBB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C45635F2229B98F009CBB1C /* Main.storyboard */; };
+		0C45635E2229B98F009CBB1C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45635D2229B98F009CBB1C /* MessagesViewController.swift */; };
 		0C4563632229B992009CBB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4563622229B992009CBB1C /* Assets.xcassets */; };
 		0C4563662229B992009CBB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4563642229B992009CBB1C /* LaunchScreen.storyboard */; };
 		0C4563712229B992009CBB1C /* IGListKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4563702229B992009CBB1C /* IGListKitDemoTests.swift */; };
 		0C45637C2229B992009CBB1C /* IGListKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45637B2229B992009CBB1C /* IGListKitDemoUITests.swift */; };
+		0C45638B2229B9D9009CBB1C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45638A2229B9D9009CBB1C /* Message.swift */; };
+		0C45638D2229BA6B009CBB1C /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45638C2229BA6B009CBB1C /* DateModel.swift */; };
+		0C4563912229C26D009CBB1C /* MessageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4563902229C26D009CBB1C /* MessageSectionController.swift */; };
+		0C4563952229C3F8009CBB1C /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4563942229C3F8009CBB1C /* DateCollectionViewCell.swift */; };
+		0C4563972229C401009CBB1C /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4563962229C401009CBB1C /* MessageCollectionViewCell.swift */; };
+		0C4563992229C686009CBB1C /* DateSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4563982229C686009CBB1C /* DateSectionController.swift */; };
+		6C51B453A86D28A36E5075FA /* Pods_IGListKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0541D604BCE14C5D87F449F /* Pods_IGListKitDemoTests.framework */; };
+		F5E845E5DA327C8D78DF6BD0 /* Pods_IGListKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E32F970640BF9E1D4C90440 /* Pods_IGListKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +44,7 @@
 /* Begin PBXFileReference section */
 		0C4563582229B98F009CBB1C /* IGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C45635B2229B98F009CBB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C45635D2229B98F009CBB1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C4563602229B98F009CBB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C45635D2229B98F009CBB1C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		0C4563622229B992009CBB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C4563652229B992009CBB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4563672229B992009CBB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,21 @@
 		0C4563772229B992009CBB1C /* IGListKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGListKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C45637B2229B992009CBB1C /* IGListKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKitDemoUITests.swift; sourceTree = "<group>"; };
 		0C45637D2229B992009CBB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C45638A2229B9D9009CBB1C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0C45638C2229BA6B009CBB1C /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		0C4563902229C26D009CBB1C /* MessageSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSectionController.swift; sourceTree = "<group>"; };
+		0C4563942229C3F8009CBB1C /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C4563962229C401009CBB1C /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C4563982229C686009CBB1C /* DateSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSectionController.swift; sourceTree = "<group>"; };
+		0CB135D9C7DA12158CDB2214 /* Pods-IGListKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemoUITests/Pods-IGListKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E32F970640BF9E1D4C90440 /* Pods_IGListKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21305578FD740F359D054A83 /* Pods-IGListKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemoUITests/Pods-IGListKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50806D885D384484C94C7818 /* Pods_IGListKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69223C6C3960DAB492483B97 /* Pods-IGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		94D3D6D2D4E8B952B6BFD5CA /* Pods-IGListKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemoTests/Pods-IGListKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E77B6B378C27FB12484DB5C /* Pods-IGListKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemoTests/Pods-IGListKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0541D604BCE14C5D87F449F /* Pods_IGListKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B707DCBF84A1B0DF39D18678 /* Pods-IGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E845E5DA327C8D78DF6BD0 /* Pods_IGListKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C51B453A86D28A36E5075FA /* Pods_IGListKitDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B64D3D3BF2155ED043FC29F /* Pods_IGListKitDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,8 @@
 				0C45636F2229B992009CBB1C /* IGListKitDemoTests */,
 				0C45637A2229B992009CBB1C /* IGListKitDemoUITests */,
 				0C4563592229B98F009CBB1C /* Products */,
+				3AD9470F4362E8C88FD09971 /* Pods */,
+				4C7E08F66BEB1A980BFA0A63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				0C45635B2229B98F009CBB1C /* AppDelegate.swift */,
-				0C45635D2229B98F009CBB1C /* ViewController.swift */,
-				0C45635F2229B98F009CBB1C /* Main.storyboard */,
+				0C45638F2229C221009CBB1C /* Cells */,
+				0C45638E2229C21A009CBB1C /* SectionControllers */,
+				0C4563892229B9C4009CBB1C /* Models */,
+				0C45635D2229B98F009CBB1C /* MessagesViewController.swift */,
 				0C4563622229B992009CBB1C /* Assets.xcassets */,
 				0C4563642229B992009CBB1C /* LaunchScreen.storyboard */,
 				0C4563672229B992009CBB1C /* Info.plist */,
@@ -125,6 +154,56 @@
 			path = IGListKitDemoUITests;
 			sourceTree = "<group>";
 		};
+		0C4563892229B9C4009CBB1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C45638A2229B9D9009CBB1C /* Message.swift */,
+				0C45638C2229BA6B009CBB1C /* DateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C45638E2229C21A009CBB1C /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C4563902229C26D009CBB1C /* MessageSectionController.swift */,
+				0C4563982229C686009CBB1C /* DateSectionController.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		0C45638F2229C221009CBB1C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C4563942229C3F8009CBB1C /* DateCollectionViewCell.swift */,
+				0C4563962229C401009CBB1C /* MessageCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AD9470F4362E8C88FD09971 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69223C6C3960DAB492483B97 /* Pods-IGListKitDemo.debug.xcconfig */,
+				B707DCBF84A1B0DF39D18678 /* Pods-IGListKitDemo.release.xcconfig */,
+				94D3D6D2D4E8B952B6BFD5CA /* Pods-IGListKitDemoTests.debug.xcconfig */,
+				9E77B6B378C27FB12484DB5C /* Pods-IGListKitDemoTests.release.xcconfig */,
+				0CB135D9C7DA12158CDB2214 /* Pods-IGListKitDemoUITests.debug.xcconfig */,
+				21305578FD740F359D054A83 /* Pods-IGListKitDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C7E08F66BEB1A980BFA0A63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E32F970640BF9E1D4C90440 /* Pods_IGListKitDemo.framework */,
+				B0541D604BCE14C5D87F449F /* Pods_IGListKitDemoTests.framework */,
+				50806D885D384484C94C7818 /* Pods_IGListKitDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4563802229B992009CBB1C /* Build configuration list for PBXNativeTarget "IGListKitDemo" */;
 			buildPhases = (
+				5066E4C2126BBCDFBDAC1C15 /* [CP] Check Pods Manifest.lock */,
 				0C4563542229B98F009CBB1C /* Sources */,
 				0C4563552229B98F009CBB1C /* Frameworks */,
 				0C4563562229B98F009CBB1C /* Resources */,
+				F30F819F8B3E6A6BD28B4B59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4563832229B992009CBB1C /* Build configuration list for PBXNativeTarget "IGListKitDemoTests" */;
 			buildPhases = (
+				69C96FC574671D55F2B1B237 /* [CP] Check Pods Manifest.lock */,
 				0C4563682229B992009CBB1C /* Sources */,
 				0C4563692229B992009CBB1C /* Frameworks */,
 				0C45636A2229B992009CBB1C /* Resources */,
@@ -167,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4563862229B992009CBB1C /* Build configuration list for PBXNativeTarget "IGListKitDemoUITests" */;
 			buildPhases = (
+				5F22E94A7D0B46306EA3ADFE /* [CP] Check Pods Manifest.lock */,
 				0C4563732229B992009CBB1C /* Sources */,
 				0C4563742229B992009CBB1C /* Frameworks */,
 				0C4563752229B992009CBB1C /* Resources */,
@@ -231,7 +314,6 @@
 			files = (
 				0C4563662229B992009CBB1C /* LaunchScreen.storyboard in Resources */,
 				0C4563632229B992009CBB1C /* Assets.xcassets in Resources */,
-				0C4563612229B98F009CBB1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +333,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5066E4C2126BBCDFBDAC1C15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F22E94A7D0B46306EA3ADFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKitDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C96FC574671D55F2B1B237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKitDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30F819F8B3E6A6BD28B4B59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C4563542229B98F009CBB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C45635E2229B98F009CBB1C /* ViewController.swift in Sources */,
+				0C45638B2229B9D9009CBB1C /* Message.swift in Sources */,
+				0C45635E2229B98F009CBB1C /* MessagesViewController.swift in Sources */,
 				0C45635C2229B98F009CBB1C /* AppDelegate.swift in Sources */,
+				0C4563912229C26D009CBB1C /* MessageSectionController.swift in Sources */,
+				0C45638D2229BA6B009CBB1C /* DateModel.swift in Sources */,
+				0C4563992229C686009CBB1C /* DateSectionController.swift in Sources */,
+				0C4563972229C401009CBB1C /* MessageCollectionViewCell.swift in Sources */,
+				0C4563952229C3F8009CBB1C /* DateCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +458,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0C45635F2229B98F009CBB1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C4563602229B98F009CBB1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C4563642229B992009CBB1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,6 +587,7 @@
 		};
 		0C4563812229B992009CBB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69223C6C3960DAB492483B97 /* Pods-IGListKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +606,7 @@
 		};
 		0C4563822229B992009CBB1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B707DCBF84A1B0DF39D18678 /* Pods-IGListKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +625,7 @@
 		};
 		0C4563842229B992009CBB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D3D6D2D4E8B952B6BFD5CA /* Pods-IGListKitDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +647,7 @@
 		};
 		0C4563852229B992009CBB1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E77B6B378C27FB12484DB5C /* Pods-IGListKitDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +669,7 @@
 		};
 		0C4563872229B992009CBB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB135D9C7DA12158CDB2214 /* Pods-IGListKitDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +690,7 @@
 		};
 		0C4563882229B992009CBB1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21305578FD740F359D054A83 /* Pods-IGListKitDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
